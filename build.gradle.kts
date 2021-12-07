@@ -12,6 +12,11 @@ repositories {
     mavenCentral()
 }
 
+dependencies {
+    implementation("net.dv8tion:JDA:5.0.0-alpha.2") {
+        exclude("open-java")
+    }
+}
 
 
 tasks.withType<KotlinCompile>() {
